@@ -213,6 +213,7 @@
             0,
             0,
             0});
+            this.txt_qty2.ValueChanged += new System.EventHandler(this.numeric_change);
             // 
             // label5
             // 
@@ -256,6 +257,7 @@
             0,
             0,
             0});
+            this.txt_qty3.ValueChanged += new System.EventHandler(this.numeric_change);
             // 
             // label7
             // 
@@ -304,6 +306,7 @@
             this.txt_qty5.Name = "txt_qty5";
             this.txt_qty5.Size = new System.Drawing.Size(47, 20);
             this.txt_qty5.TabIndex = 3;
+            this.txt_qty5.ValueChanged += new System.EventHandler(this.numeric_change);
             // 
             // txt_qty4
             // 
@@ -316,6 +319,7 @@
             this.txt_qty4.Name = "txt_qty4";
             this.txt_qty4.Size = new System.Drawing.Size(47, 20);
             this.txt_qty4.TabIndex = 4;
+            this.txt_qty4.ValueChanged += new System.EventHandler(this.numeric_change);
             // 
             // txt_wg5
             // 
@@ -352,6 +356,7 @@
             this.txt_qty6.Name = "txt_qty6";
             this.txt_qty6.Size = new System.Drawing.Size(47, 20);
             this.txt_qty6.TabIndex = 3;
+            this.txt_qty6.ValueChanged += new System.EventHandler(this.numeric_change);
             // 
             // label11
             // 

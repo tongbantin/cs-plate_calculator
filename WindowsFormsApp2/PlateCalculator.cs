@@ -85,6 +85,7 @@ namespace WindowsFormsApp2
         }
         public void displayOutput(List<Combination_result> data, string unit, float barweight = 0)
         {
+            txt_Result.Text += String.Format("   =====   {0} {1} /{2}lbs"+Environment.NewLine + Environment.NewLine, barweight, unit, Math.Round(2.20462262 * barweight, 2));
             foreach (var item in data)
             {
                 var totalkg = (item.total * 2) + barweight;
