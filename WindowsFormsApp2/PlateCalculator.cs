@@ -25,12 +25,12 @@ namespace WindowsFormsApp2
         {
             var unit = "kg";
             var want = new List<Plate>();
-            want.Add(new Plate() { weight = float.Parse(txt_wg1.Text), qty = Convert.ToInt32(txt_qty11.Text) });
-            want.Add(new Plate() { weight = float.Parse(txt_wg2.Text), qty = Convert.ToInt32(txt_qty2.Text) });
-            want.Add(new Plate() { weight = float.Parse(txt_wg3.Text), qty = Convert.ToInt32(txt_qty3.Text) });
-            want.Add(new Plate() { weight = float.Parse(txt_wg4.Text), qty = Convert.ToInt32(txt_qty4.Text) });
-            want.Add(new Plate() { weight = float.Parse(txt_wg5.Text), qty = Convert.ToInt32(txt_qty5.Text) });
-            want.Add(new Plate() { weight = float.Parse(txt_wg6.Text), qty = Convert.ToInt32(txt_qty6.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg1.Text), qty = Convert.ToInt32(txt_qty11.Text),price = Convert.ToInt32(textprice1.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg2.Text), qty = Convert.ToInt32(txt_qty2.Text), price = Convert.ToInt32(textprice2.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg3.Text), qty = Convert.ToInt32(txt_qty3.Text), price = Convert.ToInt32(textprice3.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg4.Text), qty = Convert.ToInt32(txt_qty4.Text), price = Convert.ToInt32(textprice4.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg5.Text), qty = Convert.ToInt32(txt_qty5.Text), price = Convert.ToInt32(textprice5.Text) });
+            want.Add(new Plate() { weight = float.Parse(txt_wg6.Text), qty = Convert.ToInt32(txt_qty6.Text), price = Convert.ToInt32(textprice6.Text) });
             want = want.OrderBy(x => x.weight).ToList();
             var divide = rad_2dumbbell.Checked ? 4 : 2;
             var barwg = rad_barbell.Checked ? float.Parse(txt_bar_wg.Text) : float.Parse(txt_dum_wg.Text);
@@ -75,6 +75,7 @@ namespace WindowsFormsApp2
             lbl_totalwg.Text = wg.ToString();
             lbl_totalqty.Text = qty.ToString();
             lbl_totalprice.Text = price.ToString();
+            lbltotalpriceqty.Text = plate.Sum(x => x.price * x.qty).ToString();
 
         }
         public void Clear() {
@@ -131,6 +132,7 @@ namespace WindowsFormsApp2
         {
             public float weight { get; set; }
             public int qty { get; set; }
+            public int price { get; set; }
         }
         public class Combination_result
         {

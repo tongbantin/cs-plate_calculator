@@ -71,6 +71,20 @@
             this.label18 = new System.Windows.Forms.Label();
             this.lbl_totalprice = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.textprice1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textprice2 = new System.Windows.Forms.TextBox();
+            this.textprice3 = new System.Windows.Forms.TextBox();
+            this.textprice4 = new System.Windows.Forms.TextBox();
+            this.textprice5 = new System.Windows.Forms.TextBox();
+            this.textprice6 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lbltotalpriceqty = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txt_qty11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_qty2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_qty3)).BeginInit();
@@ -94,7 +108,7 @@
             // rad_1dumbbell
             // 
             this.rad_1dumbbell.AutoSize = true;
-            this.rad_1dumbbell.Location = new System.Drawing.Point(262, 12);
+            this.rad_1dumbbell.Location = new System.Drawing.Point(299, 12);
             this.rad_1dumbbell.Name = "rad_1dumbbell";
             this.rad_1dumbbell.Size = new System.Drawing.Size(98, 17);
             this.rad_1dumbbell.TabIndex = 0;
@@ -104,7 +118,7 @@
             // rad_2dumbbell
             // 
             this.rad_2dumbbell.AutoSize = true;
-            this.rad_2dumbbell.Location = new System.Drawing.Point(381, 12);
+            this.rad_2dumbbell.Location = new System.Drawing.Point(442, 12);
             this.rad_2dumbbell.Name = "rad_2dumbbell";
             this.rad_2dumbbell.Size = new System.Drawing.Size(103, 17);
             this.rad_2dumbbell.TabIndex = 0;
@@ -399,11 +413,11 @@
             this.txt_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Result.Location = new System.Drawing.Point(222, 74);
+            this.txt_Result.Location = new System.Drawing.Point(299, 74);
             this.txt_Result.Multiline = true;
             this.txt_Result.Name = "txt_Result";
             this.txt_Result.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_Result.Size = new System.Drawing.Size(479, 342);
+            this.txt_Result.Size = new System.Drawing.Size(643, 342);
             this.txt_Result.TabIndex = 9;
             // 
             // btn_cal
@@ -496,11 +510,139 @@
             this.label20.TabIndex = 8;
             this.label20.Text = "baht";
             // 
+            // textprice1
+            // 
+            this.textprice1.Location = new System.Drawing.Point(198, 114);
+            this.textprice1.Name = "textprice1";
+            this.textprice1.Size = new System.Drawing.Size(40, 20);
+            this.textprice1.TabIndex = 1;
+            this.textprice1.Text = "275";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(244, 118);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "bht/qty";
+            // 
+            // textprice2
+            // 
+            this.textprice2.Location = new System.Drawing.Point(198, 141);
+            this.textprice2.Name = "textprice2";
+            this.textprice2.Size = new System.Drawing.Size(40, 20);
+            this.textprice2.TabIndex = 1;
+            this.textprice2.Text = "275";
+            // 
+            // textprice3
+            // 
+            this.textprice3.Location = new System.Drawing.Point(198, 166);
+            this.textprice3.Name = "textprice3";
+            this.textprice3.Size = new System.Drawing.Size(40, 20);
+            this.textprice3.TabIndex = 1;
+            this.textprice3.Text = "550";
+            // 
+            // textprice4
+            // 
+            this.textprice4.Location = new System.Drawing.Point(198, 193);
+            this.textprice4.Name = "textprice4";
+            this.textprice4.Size = new System.Drawing.Size(40, 20);
+            this.textprice4.TabIndex = 1;
+            this.textprice4.Text = "1100";
+            // 
+            // textprice5
+            // 
+            this.textprice5.Location = new System.Drawing.Point(198, 218);
+            this.textprice5.Name = "textprice5";
+            this.textprice5.Size = new System.Drawing.Size(40, 20);
+            this.textprice5.TabIndex = 1;
+            this.textprice5.Text = "1650";
+            // 
+            // textprice6
+            // 
+            this.textprice6.Location = new System.Drawing.Point(198, 244);
+            this.textprice6.Name = "textprice6";
+            this.textprice6.Size = new System.Drawing.Size(40, 20);
+            this.textprice6.TabIndex = 1;
+            this.textprice6.Text = "2200";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(244, 144);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "bht/qty";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(244, 170);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 14;
+            this.label22.Text = "bht/qty";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(244, 195);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 15;
+            this.label23.Text = "bht/qty";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(244, 222);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.TabIndex = 16;
+            this.label24.Text = "bht/qty";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(244, 247);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.TabIndex = 16;
+            this.label25.Text = "bht/qty";
+            // 
+            // lbltotalpriceqty
+            // 
+            this.lbltotalpriceqty.AutoSize = true;
+            this.lbltotalpriceqty.Location = new System.Drawing.Point(195, 309);
+            this.lbltotalpriceqty.Name = "lbltotalpriceqty";
+            this.lbltotalpriceqty.Size = new System.Drawing.Size(13, 13);
+            this.lbltotalpriceqty.TabIndex = 17;
+            this.lbltotalpriceqty.Text = "0";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(244, 309);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(28, 13);
+            this.label27.TabIndex = 18;
+            this.label27.Text = "baht";
+            // 
             // PlateCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1004, 450);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.lbltotalpriceqty);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.lbl_totalqty);
             this.Controls.Add(this.lbl_totalprice);
             this.Controls.Add(this.lbl_totalwg);
@@ -537,6 +679,12 @@
             this.Controls.Add(this.txt_qty11);
             this.Controls.Add(this.txt_wg2);
             this.Controls.Add(this.txt_dum_wg);
+            this.Controls.Add(this.textprice6);
+            this.Controls.Add(this.textprice5);
+            this.Controls.Add(this.textprice4);
+            this.Controls.Add(this.textprice3);
+            this.Controls.Add(this.textprice2);
+            this.Controls.Add(this.textprice1);
             this.Controls.Add(this.txt_wg1);
             this.Controls.Add(this.txt_price);
             this.Controls.Add(this.txt_bar_wg);
@@ -602,6 +750,20 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lbl_totalprice;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textprice1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textprice2;
+        private System.Windows.Forms.TextBox textprice3;
+        private System.Windows.Forms.TextBox textprice4;
+        private System.Windows.Forms.TextBox textprice5;
+        private System.Windows.Forms.TextBox textprice6;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbltotalpriceqty;
+        private System.Windows.Forms.Label label27;
     }
 }
 
